@@ -12,6 +12,7 @@ namespace Tre_på_Rad
         public BoardModel()
         {
             content = new CellContent[9];
+            content[2] = CellContent.Circle;
         }
     }
 }

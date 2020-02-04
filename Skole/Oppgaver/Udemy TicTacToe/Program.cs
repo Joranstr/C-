@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Convert;
 
 namespace Udemy_TicTacToe
 {
@@ -24,51 +25,9 @@ namespace Udemy_TicTacToe
             int input = 0;
             bool inputCorrect = true;
 
-            Setfield();
+            SetField();
 
-            #region 
-            //check winning condition.
 
-            char[] playerChars = {'x', 'O'};
-
-            foreach (var playerChar in playerChars)
-            {
-                if (((playField[0, 0] == playerChar) && (playField[0, 1] == playerChar) &&
-                     (playField[0, 2] == playerChar))
-                    || ((playField[1, 0] == playerChar) && (playField[1, 1] == playerChar) &&
-                        (playField[1, 2] == playerChar))
-                    || ((playField[2, 0] == playerChar) && (playField[2, 1] == playerChar) &&
-                        (playField[2, 2] == playerChar))
-                    || ((playField[0, 0] == playerChar) && (playField[1, 0] == playerChar) &&
-                        (playField[2, 0] == playerChar))
-                    || ((playField[0, 1] == playerChar) && (playField[1, 1] == playerChar) &&
-                        (playField[1, 2] == playerChar))
-                    || ((playField[0, 2] == playerChar) && (playField[2, 1] == playerChar) &&
-                        (playField[2, 2] == playerChar))
-                    || ((playField[0, 0] == playerChar) && (playField[1, 1] == playerChar) &&
-                        (playField[2, 2] == playerChar))
-                    || ((playField[0, 2] == playerChar) && (playField[1, 1] == playerChar) &&
-                        (playField[2, 0] == playerChar))
-                    || ((playField[0, 1] == playerChar) && (playField[1, 1] == playerChar) &&
-                        (playField[2, 1] == playerChar))
-                )
-                {
-                    if (playerChar == 'X')
-                    {
-                        Console.WriteLine("Player 2 has won!");
-                    }else if (playerChar == 'O')
-                    {
-                        Console.WriteLine("Player 1 has won!");
-                    }
-
-                    break;
-                    
-                }
-
-            }
-            
-
-            #endregion
 
             do
             {
@@ -82,58 +41,50 @@ namespace Udemy_TicTacToe
                     player = 2;
                     EnterXorO(player, input);
                 }
-                Setfield();
-
-                #region 
-
-                
+                SetField();
 
                 do
                 {
-                    Console.WriteLine($"Player {player}: Choose your field! ");
+                    Console.Write($"PLayer {player}: choose your field! ");
                     try
                     {
-                    input = Convert.ToInt32(Console.ReadLine());
+                        input = ToInt32(Console.ReadLine());
                     }
-                    catch
+                    catch (Exception e)
                     {
-                        Console.WriteLine("please enter a number");
+                        Console.WriteLine("Please enter a number");
                     }
 
                     if ((input == 1) && (playField[0, 0] == '1'))
                         inputCorrect = true;
-                    else if((input == 2) && (playField[0, 1] == '2'))
+                    else if ((input == 2) && (playField[0, 1] == '2'))
                         inputCorrect = true;
-                    else if((input == 3) && (playField[0, 2] == '3'))
+                    else if ((input == 3) && (playField[0, 2] == '3'))
                         inputCorrect = true;
-                    else if((input == 4) && (playField[1, 0] == '4'))
+                    else if ((input == 4) && (playField[1, 0] == '4'))
                         inputCorrect = true;
-                    else if((input == 5) && (playField[1, 1] == '5'))
+                    else if ((input == 5) && (playField[1, 1] == '5'))
                         inputCorrect = true;
-                    else if((input == 6) && (playField[1, 2] == '6'))
+                    else if ((input == 6) && (playField[1, 2] == '6'))
                         inputCorrect = true;
-                    else if((input == 7) && (playField[2, 0] == '7'))
+                    else if ((input == 7) && (playField[2, 0] == '7'))
                         inputCorrect = true;
-                    else if((input == 8) && (playField[2, 1] == '8'))
+                    else if ((input == 8) && (playField[2, 1] == '8'))
                         inputCorrect = true;
-                    else if((input == 9) && (playField[2, 2] == '9'))
+                    else if ((input == 9) && (playField[2, 2] == '9'))
                         inputCorrect = true;
                     else
                     {
-                        Console.WriteLine("Incorect input!");
+                        Console.WriteLine("Incorrect input! Please use another field!");
                         inputCorrect = false;
                     }
-
                 } while (!inputCorrect);
-                #endregion
-                
-            } while (true);
-            {
 
-            }
+
+            } while (true);
         }
 
-        public static void Setfield()
+        public static void SetField()
         {
             Console.Clear();
             Console.WriteLine($"  {playField[0, 0]}  |   {playField[0, 1]}   |   {playField[0, 2]}   ");
@@ -141,7 +92,7 @@ namespace Udemy_TicTacToe
             Console.WriteLine($"  {playField[2, 0]}  |   {playField[2, 1]}   |   {playField[2, 2]}   ");
         }
 
-        public static void EnterXorO(int player ,int input)
+        public static void EnterXorO(int player, int input)
         {
             char playerSign = ' ';
             if (player == 1)
@@ -162,13 +113,13 @@ namespace Udemy_TicTacToe
                 case 8: playField[2, 1] = playerSign; break;
                 case 9: playField[2, 2] = playerSign; break;
             }
-            
+
         }
 
         public static void resetGame()
         {
             playField = playFieldInitial;
-            Setfield();
+            SetField();
         }
     }
 }
