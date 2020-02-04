@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moodle Pure puzzles oppgave
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pure Puzzle $Reinskreavet", "Pure Puzzle $Reinskreavet\Pure Puzzle $Reinskreavet.csproj", "{A903B0DD-8B93-4662-AE66-CA26F7F0ADB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problems with arrays", "Problems with arrays\Problems with arrays.csproj", "{D368028E-EB93-4A5B-BBAB-6AD9A6D2052B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problems with arrays", "Problems with arrays\Problems with arrays.csproj", "{D368028E-EB93-4A5B-BBAB-6AD9A6D2052B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tre på Rad", "Tre på Rad\Tre på Rad.csproj", "{3918DC34-E445-46E7-BFC8-279FEF261A0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{D368028E-EB93-4A5B-BBAB-6AD9A6D2052B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D368028E-EB93-4A5B-BBAB-6AD9A6D2052B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D368028E-EB93-4A5B-BBAB-6AD9A6D2052B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3918DC34-E445-46E7-BFC8-279FEF261A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3918DC34-E445-46E7-BFC8-279FEF261A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3918DC34-E445-46E7-BFC8-279FEF261A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3918DC34-E445-46E7-BFC8-279FEF261A0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
