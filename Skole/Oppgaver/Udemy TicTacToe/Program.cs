@@ -43,6 +43,19 @@ namespace Udemy_TicTacToe
                 }
                 SetField();
 
+                #region ChackWinnercondition
+
+                char[] playerChars = {'X', 'O'};
+
+                foreach (char playerChar in playerChars)
+                {
+                    if (((playField[0,0]==)))
+                }
+
+                #endregion
+
+                #region TestingFieldIsReady
+
                 do
                 {
                     Console.Write($"PLayer {player}: choose your field! ");
@@ -80,6 +93,7 @@ namespace Udemy_TicTacToe
                     }
                 } while (!inputCorrect);
 
+                #endregion
 
             } while (true);
         }

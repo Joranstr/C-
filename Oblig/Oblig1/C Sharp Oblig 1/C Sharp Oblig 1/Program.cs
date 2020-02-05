@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace C_Sharp_Oblig_1
 {
@@ -6,7 +7,8 @@ namespace C_Sharp_Oblig_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var sverreMagnus = new SlaktstreClasse(1, "Sverre","test", "2005", "Håkon");
+            Console.WriteLine(sverreMagnus);
         }
     }
 }

@@ -12,10 +12,13 @@ namespace C_Sharp_Oblig_1
         private string birthYear;
         private string lastName;
         private string firstName;
-        
+        private string parent;
+        private int id;
 
-        public SlaktstreClasse(string firstName,string lastName,string birthYear,string deathYear,string mother,string father)
+
+        public SlaktstreClasse(int id, string firstName,string lastName,string birthYear,string deathYear,string mother,string father)
         {
+            this.id = id;
             this.firstName = firstName;
             this.lastName = lastName;
             this.birthYear = birthYear;
@@ -24,14 +27,36 @@ namespace C_Sharp_Oblig_1
             this.father = father;
         }
 
-        public SlaktstreClasse(string firstName, string lastName, string birthYear, string mother, string father)
+        public SlaktstreClasse(int id, string firstName, string lastName, string birthYear, string mother, string father)
         {
+            this.id = id;
             this.firstName = firstName;
             this.lastName = lastName;
             this.birthYear = birthYear;
             this.mother = mother;
             this.father = father;
-            //this.newGuid();
+        }
+
+        public SlaktstreClasse(int id, string firstName, string lastName, string birthYear, string parent)
+        {
+            this.id = id;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.birthYear = birthYear;
+            this.parent = parent;
+        }
+        public SlaktstreClasse(int id, string firstName, string lastName, string birthYear)
+        {
+            this.id = id;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.birthYear = birthYear;
+        }
+        public SlaktstreClasse(int id, string firstName, string lastName)
+        {
+            this.id = id;
+            this.firstName = firstName;
+            this.lastName = lastName;
         }
     }
 }
