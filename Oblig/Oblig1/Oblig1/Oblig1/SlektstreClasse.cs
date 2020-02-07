@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace C_Sharp_Oblig_1
+namespace Oblig1
 {
-    class SlaktstreClasse
+    class SlektstreClasse
     {
         private string father;
         private string mother;
@@ -16,7 +16,7 @@ namespace C_Sharp_Oblig_1
         private int id;
 
 
-        public SlaktstreClasse(int id, string firstName,string lastName,string birthYear,string deathYear,string mother,string father)
+        public SlaktstreClasse(int id, string firstName, string lastName, string birthYear, string deathYear, string mother, string father)
         {
             this.id = id;
             this.firstName = firstName;
