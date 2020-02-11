@@ -6,57 +6,23 @@ namespace Oblig1
 {
     class SlektstreClasse
     {
-        private string father;
-        private string mother;
-        private string deathYear;
-        private string birthYear;
-        private string lastName;
-        private string firstName;
-        private string parent;
-        private int id;
+        public static List<Person> Persons { get; set; }
+        var sverreMagnus = new Person { Id = 1, FirstName = "Sverre Magnus", BirthYear = 2005 };
+        var ingridAlexandra = new Person { Id = 2, FirstName = "Ingrid Alexandra", BirthYear = 2004 };
+        var haakon = new Person { Id = 3, FirstName = "Haakon Magnus", BirthYear = 1973 };
+        var metteMarit = new Person { Id = 4, FirstName = "Mette-Marit", BirthYear = 1973 };
+        var marius = new Person { Id = 5, FirstName = "Marius", LastName = "Borg Høiby", BirthYear = 1997 };
+        var harald = new Person { Id = 6, FirstName = "Harald", BirthYear = 1937 };
+        var sonja = new Person { Id = 7, FirstName = "Sonja", BirthYear = 1937 };
+        var olav = new Person { Id = 8, FirstName = "Olav", BirthYear = 1903 };
 
-
-        public SlaktstreClasse(int id, string firstName, string lastName, string birthYear, string deathYear, string mother, string father)
-        {
-            this.id = id;
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.birthYear = birthYear;
-            this.deathYear = deathYear;
-            this.mother = mother;
-            this.father = father;
-        }
-
-        public SlaktstreClasse(int id, string firstName, string lastName, string birthYear, string mother, string father)
-        {
-            this.id = id;
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.birthYear = birthYear;
-            this.mother = mother;
-            this.father = father;
-        }
-
-        public SlaktstreClasse(int id, string firstName, string lastName, string birthYear, string parent)
-        {
-            this.id = id;
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.birthYear = birthYear;
-            this.parent = parent;
-        }
-        public SlaktstreClasse(int id, string firstName, string lastName, string birthYear)
-        {
-            this.id = id;
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.birthYear = birthYear;
-        }
-        public SlaktstreClasse(int id, string firstName, string lastName)
-        {
-            this.id = id;
-            this.firstName = firstName;
-            this.lastName = lastName;
-        }
+        sverreMagnus.Father = haakon;
+        sverreMagnus.Mother = metteMarit;
+        ingridAlexandra.Father = haakon;
+        ingridAlexandra.Mother = metteMarit;
+        marius.Mother = metteMarit;
+        haakon.Father = harald;
+        haakon.Mother = sonja;
+        harald.Father = olav;
     }
 }
