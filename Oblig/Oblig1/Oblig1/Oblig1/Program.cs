@@ -8,60 +8,69 @@ namespace C_Sharp_Oblig_1
     {
         static void Main()
         {
+            Person.StandarPeople();
             Helptext(true);
             KonsolKomando();
-            
+
 
         }
 
         private static void KonsolKomando()
         {
-            string Kommmando = Console.ReadLine().ToLower();
+            while (true)
+            {
+                string Kommmando = Console.ReadLine().ToLower();
 
-            if (Kommmando == "hjelp") Helptext(false);
-            else if (Kommmando == "list") ShowListOfPeople();
-            else if (Kommmando == "id") ChoosePerson();
-            else if (Kommmando == "clear")
-            {
-                Console.Clear();
-                Main();
+                if (Kommmando == "hjelp") Helptext(false);
+                else if (Kommmando == "list") ShowListOfPeople();
+                else if (Kommmando == "id") ChoosePerson();
+                else if (Kommmando == "clear")
+                {
+                    Console.Clear();
+                    Main();
+                }
+                else if (Kommmando == "exit") Environment.Exit(0);
+                else
+                {
+                    Console.WriteLine("Forsto ikke komando, venlikst skri inn gyldig komando.\nHvis du trenger trenger og se gyldige kommandoer skriv hjelp.");
+                    KonsolKomando();
+                };
             }
-            else if (Kommmando == "exit") Environment.Exit(0);
-            else
-            {
-                Console.WriteLine("Forsto ikke komando, venlikst skri inn gyldig komando.\nHvis du trenger trenger og se gyldige kommandoer skriv hjelp.");
-                KonsolKomando();
-            };
         }
 
         private static void ChoosePerson()
         {
-            int ID =0;
+            int ID = 0;
             Console.WriteLine("Please enter Id");
             string innkommando = Console.ReadLine();
             try
             {
                 ID = Int32.Parse(innkommando);
+                ShowPerson(ID);
             }
             catch
             {
                 Console.WriteLine("Please enter a number");
             }
 
-            foreach (var person in Persons)
-            {
-
-            }
         }
 
-        private static void ShowPerson()
+        private static void ShowPerson(int ID)
         {
-            throw new NotImplementedException();
+
+            foreach (var person in Person.Persons)
+            {
+                if (ID == person.Id) person.show();
+            }
+
         }
 
         private static void ShowListOfPeople()
         {
-            throw new NotImplementedException();
+            foreach (var person in Person.Persons)
+            {
+                person.show();
+            }
         }
 
 
@@ -92,8 +101,8 @@ namespace C_Sharp_Oblig_1
 
         public static void slekt()
         {
-            
-            
+
+
         }
     }
 }
