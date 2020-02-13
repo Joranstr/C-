@@ -51,12 +51,11 @@ namespace Oblig1
         public void show()
         {
             Console.WriteLine($"Id: {Id}");
-            if(FirstName != null)Console.Write($"Navn: {FirstName} ");
-            if(LastName != null)Console.Write($"{LastName} \n");
-            if(BirthYear.HasValue)Console.Write($"{BirthYear} \n");
-            if(ExpiredYear.HasValue)Console.Write($"{ExpiredYear} \n");
-            if(Father != null)Console.Write($"{Father.FirstName} id= {Father.Id}\n");
-            if(Mother != null)Console.Write($"{Mother.FirstName} id= {Mother.Id} \n");
+            if(FirstName != null)Console.Write($"Navn: {FirstName} {LastName}\n");
+            if(BirthYear.HasValue)Console.Write($"Fødsels år: {BirthYear} \n");
+            if(ExpiredYear.HasValue)Console.Write($"Døds år: {ExpiredYear} \n");
+            if(Father != null)Console.Write($"Fars navn: {Father.FirstName} id= {Father.Id}\n");
+            if(Mother != null)Console.Write($"Mors navn: {Mother.FirstName} id= {Mother.Id} \n");
         }
     }
 }

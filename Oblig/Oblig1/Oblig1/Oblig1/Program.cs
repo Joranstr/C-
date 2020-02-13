@@ -1,6 +1,7 @@
 ﻿using Oblig1;
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace C_Sharp_Oblig_1
 {
@@ -8,10 +9,10 @@ namespace C_Sharp_Oblig_1
     {
         static void Main()
         {
+            Console.OutputEncoding = Encoding.UTF8;
             Person.StandarPeople();
             Helptext(true);
             KonsolKomando();
-
 
         }
 
