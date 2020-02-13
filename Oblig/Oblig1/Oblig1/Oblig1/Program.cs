@@ -99,11 +99,5 @@ namespace C_Sharp_Oblig_1
             }
             KonsolKomando();
         }
-
-        public static void slekt()
-        {
-
-
-        }
     }
 }
