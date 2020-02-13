@@ -41,7 +41,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problems with arrays", "Pro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tre på Rad", "Tre på Rad\Tre på Rad.csproj", "{3918DC34-E445-46E7-BFC8-279FEF261A0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUdemyTicTacToe.Test", "UdemyTicTacToe.Test\TestUdemyTicTacToe.Test.csproj", "{8A798A38-87CF-4A00-B6FC-71C88036B538}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestUdemyTicTacToe.Test", "UdemyTicTacToe.Test\TestUdemyTicTacToe.Test.csproj", "{8A798A38-87CF-4A00-B6FC-71C88036B538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Startliste", "Startliste\Startliste.csproj", "{1B489D45-B2CE-4E5A-B880-4E868D6253F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{8A798A38-87CF-4A00-B6FC-71C88036B538}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A798A38-87CF-4A00-B6FC-71C88036B538}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A798A38-87CF-4A00-B6FC-71C88036B538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B489D45-B2CE-4E5A-B880-4E868D6253F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B489D45-B2CE-4E5A-B880-4E868D6253F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B489D45-B2CE-4E5A-B880-4E868D6253F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B489D45-B2CE-4E5A-B880-4E868D6253F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

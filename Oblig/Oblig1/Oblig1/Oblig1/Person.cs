@@ -56,6 +56,7 @@ namespace Oblig1
             if(ExpiredYear.HasValue)Console.Write($"Døds år: {ExpiredYear} \n");
             if(Father != null)Console.Write($"Fars navn: {Father.FirstName} id= {Father.Id}\n");
             if(Mother != null)Console.Write($"Mors navn: {Mother.FirstName} id= {Mother.Id} \n");
+            Console.WriteLine();
         }
     }
 }
