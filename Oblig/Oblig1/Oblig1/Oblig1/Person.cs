@@ -18,7 +18,7 @@ namespace Oblig1
 
         public static List<Person> Persons { get; set; } = new List<Person>();
 
-        public static void StandarPeople()
+        static Person()
         {
             var sverreMagnus = new Person { Id = 1, FirstName = "Sverre Magnus", BirthYear = 2005 };
             var ingridAlexandra = new Person { Id = 2, FirstName = "Ingrid Alexandra", BirthYear = 2004 };

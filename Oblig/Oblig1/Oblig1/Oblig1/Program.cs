@@ -10,7 +10,6 @@ namespace C_Sharp_Oblig_1
         static void Main()
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Person.StandarPeople();
             Helptext(true);
             KonsolKomando();
 
@@ -41,7 +40,7 @@ namespace C_Sharp_Oblig_1
 
         private static void ChoosePerson()
         {
-            int ID = 0;
+            var ID = 0;
             Console.WriteLine("Please enter Id");
             string innkommando = Console.ReadLine();
             try
