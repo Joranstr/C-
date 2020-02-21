@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace Startliste
+namespace PrøveProsjekt1
 {
     class Program
     {
-        
+
+        public static List<int> MathResults = new List<int>();
         static void Main(string[] args)
         {
             var model = new RegistrationModel();
@@ -37,18 +38,9 @@ namespace Startliste
                 }
 
             }
+            
 
-            //Console.WriteLine(model.Clubs.Count);
-            foreach (var club in model.Clubs)
-            {
-                if (club.Name == "") continue;
-                Console.WriteLine(club.Name);
-                foreach (var registration in club.Registration)
-                {
-                    Console.Write(registration.StartNumber + " ");
-                    Console.WriteLine(registration.Club);
-                }
-            }
         }
+ 
     }
 }

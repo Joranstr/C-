@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VannOppgave2.0", "VannOppgave2.0\VannOppgave2.0.csproj", "{2FF81049-2537-4624-8A9F-624BA77EE64C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VannOppgave2.0.UnitTest", "VannOppgave2.0.UnitTest\VannOppgave2.0.UnitTest.csproj", "{63AC5791-DFC7-44E8-8708-54147D6B5D44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FF81049-2537-4624-8A9F-624BA77EE64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF81049-2537-4624-8A9F-624BA77EE64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF81049-2537-4624-8A9F-624BA77EE64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF81049-2537-4624-8A9F-624BA77EE64C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63AC5791-DFC7-44E8-8708-54147D6B5D44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63AC5791-DFC7-44E8-8708-54147D6B5D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63AC5791-DFC7-44E8-8708-54147D6B5D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63AC5791-DFC7-44E8-8708-54147D6B5D44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BCACDCC-550D-4136-8540-126626C3B46D}
+	EndGlobalSection
+EndGlobal

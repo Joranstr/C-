@@ -22,6 +22,7 @@ namespace Startliste
             Nationality = Lineparts[3].Trim('"');
             Group = Lineparts[4].Trim('"');
             Class = Lineparts[5].Trim('"');
+            
         }
 
         public Registration(int startNumber, string name, string club, string nationality, string @group, string @class)
