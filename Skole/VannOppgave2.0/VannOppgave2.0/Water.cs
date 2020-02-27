@@ -17,7 +17,7 @@ namespace VannOppgave
         public Water(int amount, double temperature, double? proportion = null)
         {
             Temperature = temperature;
-            ProportionFirstState = proportion.Value;
+            ProportionFirstState = proportion;
             Amount = amount;
             State = temperature <= 0 ? WaterState.Ice : temperature > 100 ? WaterState.Gas : WaterState.Fluid;
 
@@ -63,13 +63,13 @@ namespace VannOppgave
 
         }
 
-        private double HeatTo(double calories, int temprature)
+        private double HeatTo(double calories, double temprature)
         {
             if (calories <= 0) return 0;
-            var caloriesForHeatting = (temprature - Temperature) * Amount;
-            if (!(calories >= caloriesForHeatting)) return HeatMax(calories);
+            var caloriesForHeating = (temprature - Temperature) * Amount;
+            if (!(calories >= caloriesForHeating)) return HeatMax(calories);
             Temperature = temprature;
-            return calories - caloriesForHeatting;
+            return calories - caloriesForHeating;
         }
 
         private double HeatMax(double calories)
